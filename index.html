@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+</head>
+<body>
+    <div id="game">            
+        <div id="information">
+            <span>8 Mines & 6 x 8 Grid</span>            
+            <div id="new-game" class="controls">New Game</div>
+        </div>
+        
+    </div>
+    <div id="canvas"></div>
+    
+    <script src="main.js"></script>
+    <script src="help.js"></script>
+    <script type="text/javascript">
+        var board;
+        $(document).ready(function () {
+            newGame();
+            $('#new-game').hide();
+            $('#new-game').click(function () {
+                newGame();
+            });
+        });       
+    </script>
+</body>
+</html>
